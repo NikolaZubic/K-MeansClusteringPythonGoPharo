@@ -27,7 +27,7 @@ Finding the optimal solution to the k-means clustering problem for observations 
 
 ## Parallel approach 
 Main <b>motivation</b> for parallel approach is the fact that k-means clustering performance decreases when we increase number of training examples and when we decide to have a larger k.<br>
-<i><b>The main objective</b></i> of this project is to improve performance of k-Means clustering algorithm by splitting training examples into multiple partitions and then calculate distances and assign clusters in parallel. After that, cluster assignments from each partition are combined to check if clusters changed. For iteration I, if clusters changed in iteration (I - 1), we need to recalculate centroids, else we are done.<br>
+<i><b>The main objective</b></i> of this project is to improve performance of k-Means clustering algorithm by splitting training examples into multiple partitions and then we calculate distances and assign clusters in parallel. After that, cluster assignments from each partition are combined to check if clusters changed. For iteration I, if clusters changed in iteration (I - 1), we need to recalculate centroids, else we are done.<br>
 The whole process is shown on the following digaram (generated with: [Flowchart Maker](https://app.diagrams.net/)):
 <p align="center">
   <img src="https://github.com/NikolaZubic/K-MeansClusteringPythonGoPharo/blob/master/utils/images/parallelApproachDigaram.png">
