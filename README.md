@@ -12,20 +12,26 @@ where μi is the mean of points in Si. This is equivalent to minimizing the pair
   <img src="https://github.com/NikolaZubic/K-MeansClusteringPythonGoPharo/blob/master/utils/images/9fb2388a00fcf4f1df3117883fccd0c4028da33d.svg">
 </p>
 <br>
-<b>Sequential approach</b><br>
+
+## Sequential approach 
 1. Cluster the data into k groups where k  is predefined<br>
 2. Select k points at random as cluster centers<br>
 3. Assign objects to their closest cluster center according to some distance function (for example <i>Euclidean distance</i>)<br>
 4.Calculate the centroid or mean of all objects in each cluster<br>
 5. Repeat steps 2, 3 and 4 until the same points are assigned to each cluster in consecutive rounds<br>
-<br>
+
 Finding the optimal solution to the k-means clustering problem for observations in d dimensions is:<br>
 * NP-hard in general Euclidean space (of d dimensions) even for two clusters
 * NP-hard for a general number of clusters k even in the plane
-<b>Parallel approach</b>
+* if k and d (the dimension) are fixed, the problem can be exactly solved in time O(n^(dk + 1)), where n is the number of entities to be clustered
 
-
-
+## Parallel approach 
+Main <b>motivation</b> for parallel approach is the fact that k-means clustering performance decreases when we increase number of training examples and when we decide to have a larger k.<br>
+<i><b>The main objective</b></i> of this project is to improve performance of k-Means clustering algorithm by calculating distances for each point in parallel.<br>
+The whole process is shown on the following digaram (generated with: [Flowchart Maker](https://app.diagrams.net/)):
+<p align="center">
+  <img src="https://github.com/NikolaZubic/K-MeansClusteringPythonGoPharo/blob/master/utils/images/9fb2388a00fcf4f1df3117883fccd0c4028da33d.svg">
+</p>
 
 ## Programs & libraries needed in order to run this project 
 // TO DO
