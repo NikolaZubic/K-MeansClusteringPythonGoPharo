@@ -12,14 +12,14 @@ where μi is the mean of points in Si. This is equivalent to minimizing the pair
   <img src="https://github.com/NikolaZubic/K-MeansClusteringPythonGoPharo/blob/master/utils/images/9fb2388a00fcf4f1df3117883fccd0c4028da33d.svg">
 </p>
 <br>
-<b>Sequential approach</b>
+<b>Sequential approach</b><br>
 1. Cluster the data into k groups where k  is predefined<br>
 2. Select k points at random as cluster centers<br>
 3. Assign objects to their closest cluster center according to some distance function (for example <i>Euclidean distance</i>)<br>
 4.Calculate the centroid or mean of all objects in each cluster<br>
 5. Repeat steps 2, 3 and 4 until the same points are assigned to each cluster in consecutive rounds<br>
-<br><br>
-Finding the optimal solution to the k-means clustering problem for observations in d dimensions is:
+<br>
+Finding the optimal solution to the k-means clustering problem for observations in d dimensions is:<br>
 * NP-hard in general Euclidean space (of d dimensions) even for two clusters
 * NP-hard for a general number of clusters k even in the plane
 <b>Parallel approach</b>
