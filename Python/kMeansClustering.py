@@ -197,11 +197,16 @@ if __name__ == '__main__':
     data_frame = data_frame.drop(['UniName', 'Private'], axis=1)
 
     """
+    data_frame = data_frame[['Apps', 'Accept']]
+    python kMeansClustering.py testData/College.csv results/secondExample/sequential results/secondExample/parallel , 4
+    """
+
+    """
     python kMeansClustering.py testData/College.csv results/thirdExample/sequential results/thirdExample/parallel , 5
     """
 
     k_means_clustering = KMeansClustering(csv_df=data_frame, sequential_generate_results_path=sequential_results_path,
-                                          parallel_generate_results_path=parallel_results_path, k=3, max_iter=100)
+                                          parallel_generate_results_path=parallel_results_path, k=4, max_iter=100)
     KMeansClustering.initialize_centroids(k_means_clustering)
 
     data_points_sequential = k_means_clustering.run_sequential_clustering()
