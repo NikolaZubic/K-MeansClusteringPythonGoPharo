@@ -35,10 +35,22 @@ The whole process is shown on the following diagram (generated with: [Flowchart 
 Useful reference: https://cse.buffalo.edu/faculty/miller/Courses/CSE633/Chandramohan-Fall-2012-CSE633.pdf
 
 ## Programs & libraries needed in order to run this project 
-// TO DO
+Python:
+* [NumPy](https://www.numpy.org/) : Fundamental package for scientific computing with Python
+* [Pandas](https://pandas.pydata.org/) : Software library written for data manipulation and analysis
+
+Go(lang):
+* [GoNum](https://www.gonum.org/) : Set of packages designed to make writing numerical and scientific algorithms productive, performant, and <b>scalable</b>
+* [Gota](https://github.com/go-gota/gota) : DataFrames, Series and data wrangling methods for the Go programming language
 
 ## How to run?
-// TO DO
+Python:<br> 
+In `kMeansClustering.py` program can be run as following: `python kMeansClustering.py DATA_CSV_PATH SEQUENTIAL_RESULTS_PATH PARALLEL_RESULTS_PATH SEPARATOR NUMBER_OF_TASKS`, where `DATA_CSV_PATH` is csv_path to read .csv as Pandas DataFrame object, `SEQUENTIAL_RESULTS_PATH` is path where sequential results for visualization with Pharo will be saved, `PARALLEL_RESULTS_PATH` is path where parallel results for visualization with Pharo will be saved, `SEPARATOR` is character that represents separations of columns in .csv file, `NUMBER_OF_TASKS` defines number of tasks / processes for parallel clustering<br>
+In `experiments.py` user can uncomment sequential_clustering_experiment(), weak_scaling() or strong_scaling() and try experiments out, also parametrize them on its own.<br>
+
+Go(lang):<br>
+In `kmeans.go` program can be run as following: `go run kmeans.go DATA_CSV_PATH SEQUENTIAL_RESULTS_PATH PARALLEL_RESULTS_PATH NUMBER_OF_TASKS`, where there is no `SEPARATOR` argument because Gota automatically recognizes them.<br>
+By uncommenting sequentialClusteringExperiment(), weakScaling() or strongScaling() user can try experiments out and parametrize them.
 
 ## Results
 // TO DO
