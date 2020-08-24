@@ -8,7 +8,7 @@ goSeconds = [0.01597, 0.01992, 0.02693, 0.02892, 0.03687, 0.04189, 0.04985, 0.05
              0.1027]
 
 plt.title("Execution time comparison between parallel implementations (weak scaling)")
-plt.xlabel("Number of clusters (=k)")
+plt.xlabel("Number of clusters (=k) and number of tasks")
 plt.ylabel("Execution time in seconds (=s)")
 plt.plot(k, pythonSeconds, 'r-')
 for a, b in zip(k, pythonSeconds):
