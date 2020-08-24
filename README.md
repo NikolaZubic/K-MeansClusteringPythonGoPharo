@@ -53,6 +53,7 @@ In `kmeans.go` program can be run as following: `go run kmeans.go DATA_CSV_PATH 
 By uncommenting sequentialClusteringExperiment(), weakScaling() or strongScaling() user can try experiments out and parametrize them.
 
 ## Results
+Detailed report can be seen here: [Report.pdf](https://github.com/NikolaZubic/K-MeansClusteringPythonGoPharo/blob/master/Report.pdf) <br><br>
 For k = 3:<br>
 ![Preview](https://github.com/NikolaZubic/K-MeansClusteringPythonGoPharo/blob/master/utils/gifs/kequals3.gif)
 <br>For k = 4:<br>
